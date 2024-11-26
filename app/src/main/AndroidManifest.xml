@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.white_light">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Study_with_teddy">
+
+        <activity android:name="com.example.white_light.AlarmActivity" />
+
+        <activity android:name="com.example.white_light.BMI_activity" />
+        <activity android:name="com.example.white_light.BMIMainActivity" />
+        <activity android:name="com.example.white_light.SplashScreen" />
+        <activity android:name="com.example.white_light.ALLsettingsMain" />
+        <activity android:name="com.example.white_light.listSettings" />
+        <activity android:name="com.example.white_light.AllPdecoRoomMain" />
+        <activity android:name="com.example.white_light.ZpomodoroMain" />
+        <activity android:name="com.example.white_light.ZShowActivity" />
+        <activity android:name="com.example.white_light.ZTimmer" />
+        <activity android:name="com.example.white_light.GShowActivity" />
+        <activity android:name="com.example.white_light.CShowActivity" />
+        <activity android:name="com.example.white_light.GReadShowActivity" />
+        <activity android:name="com.example.white_light.PTodoListsMain" />
+        <activity android:name="com.example.white_light.PShowActivity" />
+        <activity android:name="com.example.white_light.CFlashCardsMain" />
+        <activity android:name="com.example.white_light.GFlashCardsMain" />
+
+        <activity android:name="com.example.white_light.Menu" />
+        <activity android:name="com.example.white_light.HomeActivity" />
+        <activity android:name="com.example.white_light.SignUp" />
+        <activity android:name="com.example.white_light.SignIn" />
+        <activity android:name="com.example.white_light.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.example.white_light.AlertReceiver" />
+
+    </application>
+
+</manifest>
